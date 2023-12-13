@@ -1,65 +1,144 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyVentureWeb</title>
+    <!--Swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500&family=VT323&display=swap" rel="stylesheet">
+    <link href="/website/websitestyle.css" type="text/css" rel="stylesheet">
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PyVenture</title>
-  
-  <link href="/css/style.css" type="text/css" rel="stylesheet">
-  <link href="/css/TextBox.css" type="text/css" rel="stylesheet">
-  <link href="/css/PyConsole.css" type="text/css" rel="stylesheet">
-  <link href="/css/QuestionBox.css" type="text/css" rel="stylesheet">
-  <link href="/css/MultiquestionButtons.css" type="text/css" rel="stylesheet">
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-
-  <link rel="icon" href="/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="/logo/logo-favicon.png" type="image/x-icon">
 
 </head>
-<header>
-    <!--Logo-->
-    <div class="spinning-logo">
-      <img src="/logo/gif/spinning-logo.gif" width="20%"></img>
-    </div>
 
-</header>
+
 
 <body>
 
+    <header>
+        <h1 class="logo">
+            <a href="#">
+                <img src="/logo/logo.png" width="20%">
+            </a>   
+        </h1>
+
+        <ul id="menu">
+            <li class="game_link">
+                <!-- Change when gamelink is updated -->
+                <a href="index.html" style="text-decoration: none" class="nav_link">Jogue agora!</a>
+            </li>
+
+            
+            
+            <li class="how">
+                <a href="#how-to" style="text-decoration: none" class="nav_link">Como Jogar</a>
+            </li>
+
+            <li class="info">
+                <a href="#in" style="text-decoration: none" class="nav_link">Informações</a>
+            </li>
+
+        </ul>
+        
+    
+    </header>
+
+    <main>
+        <!--Swiper-->
+        <section class="swiper">
+            <!-- Wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="swiper-content">
+                        <div class="slide-img">
+                            <img src="/logo/banner/slide1.jpg" alt="slide1">
+                        </div>
+                     <div class="slide-text">
+                         <h1>PyVenture!</h1>
+                         <p>Uma nova forma de aprender python!</p>
+                     </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="swiper-content">
+                     <div class="slide-img">
+                         <img src="/logo/banner/slide2.jpg" alt="slide3">
+                        </div>
+                        <div class="slide-text">
+                            <h1>RPG</h1>
+                            <p>Com textos interativos para facil aprendizado!</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="swiper-slide">
+                    <div class="swiper-content">
+                     <div class="slide-img">
+                         <img src="/logo/banner/slide3.jpg" alt="slide3">
+                        </div>
+                        <div class="slide-text">
+                            <h1>Quiz</h1>
+                            <p>Sistema com quizes e simulações proximas ao python!</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!--scrollbar -->
+            <div class="swiper-scrollbar"></div>
+
+        </section>
+
+        <section class="how_to" id="how-to">
+        
+        <div class="content_how_to">
+            <h1 class="Title">Como jogar</h1>
+            <div class="img_container" onmousemove="movingImage(event)">
+            <img src="/logo/keyboard/keyboard_prop_one.png" alt="prop_one" id="movingImage">
+        </div>
+        </div>
+
+        </section>
+        
+        <section class="info_text" id="in">
+            <h1 class="Title">Informações</h1>
+            <div class="img_container" onmousemove="movingImage(event)">
+            <img src="/logo/info images/layer_one.png" alt="one_img" id="movingImagetwo">
+            </div>
+            <p>
+                Projeto realizado com o intuito de ensinar python de uma maneira fácil e interativa,
+                seguindo ao fato do mesmo ser OpenSource,<br>onde o projeto pode ser modificado para quaisquer
+                matérias ou linguagens que o usuário queira ensinar/aprender.</p>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="business">
+            <p> Quaisquer dúvidas </p>
+            <p> E-mail: <a href="mailto:pedro.yamada@aluno.ifsp.edu.br" style=" text-decoration: none;">pedro.yamada@aluno.ifsp.edu.br</a> </p>
+            </div>
+            <p class="tm"> IFSP© - Todos os direitos reservados. </p>
+    </footer>
 
 
-  <!--Container-->
-  <div class="game-container">
-    <canvas class="game-canvas" width="352" height="352"></canvas>
-  </div>
-
-  
-  <!-- State -->
-  <script src="/js/PlayerState.js"></script>
-  
-  <!-- Scripts -->
-  <script src="/js/utils.js"></script>
-  <script src="/js/DirectionInput.js"></script>
-  <script src="/js/Ovrwrld.js"></script>
-  <script src="/js/GameObject.js"></script>
-  <script src="/js/Characters.js"></script>
-  <script src="/js/Sprite.js"></script>
-  <script src="/js/OvrwrldMap.js"></script>
-  <script src="/js/OvrwrldEvent.js"></script>
-  <script src="/js/TextBox.js"></script>
-  <script src="/js/KeypressInput.js"></script>
-  <script src="/js/TypeWrite.js"></script>
-  <script src="/js/pyConsole.js"></script>
-  <script src="/js/MultiquestionButtons.js"></script>
-  <script src="/js/init.js"></script>
+    <script src="website/inquiry.js"></script>
 
 </body>
-
-
-
 
 </html>
