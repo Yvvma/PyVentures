@@ -1,0 +1,44 @@
+.TextBox{
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 64px;
+    font-size: 12px;
+    padding: 4px;
+    background: var(--txtbox-bg);
+    border-top: 1p solid var(--txtbox-border-color);
+    color: var(--txtbox-font-color);
+    font-family: VT323;
+
+}
+
+.TextBoxP{
+    margin: 0;
+    font-size: 12px;
+}
+
+.TextBoxBtn{
+    margin: 0;
+    font-size: 10px;
+    padding: 0;
+    /*-webkit-appearance: none;*/
+    background: none;
+    border: 0;
+    font-family: inherit;
+    cursor: pointer;
+    position:absolute;
+    right: 5px;
+    bottom: 5px;
+    color: #ffff;
+}
+
+
+.TextBox span {
+    opacity: 0;
+  }
+
+.TextBox span.revealed{
+    opacity: 1;
+  }

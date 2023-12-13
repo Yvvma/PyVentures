@@ -1,0 +1,45 @@
+.PyConsole{
+
+    position: relative;
+    left: 20%;
+    right: 0;
+    bottom: 50%;
+    height: 150px;
+    width: 220px;
+    font-size: 12px;
+    padding: 4px;
+    background: var(--console-bg);
+    border-top: 15px solid var(--console-border-color);
+    color: var(--console-font-color);
+    font-family: VT323;
+
+}
+
+.ConsoleP{
+    margin: 0;
+    font-size: 12px;
+}
+
+.ConsoleBtn{
+    margin: 0;
+    font-size: 10px;
+    padding: 0;
+    /*-webkit-appearance: none;*/
+    background: none;
+    border: 0;
+    font-family: inherit;
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    color: #ffff;
+}
+
+
+.PyConsole span {
+    opacity: 0;
+  }
+
+.PyConsole span.revealed{
+    opacity: 1;
+  }

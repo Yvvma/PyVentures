@@ -1,0 +1,69 @@
+:root {
+  --border-color:#6b6372;
+  --dialog-bg: #000086;
+
+  --txtbox-bg: #000086;
+  --txtbox-border-color: #6b6372;
+  --txtbox-font-color: #ffff;
+  --txtbox-selected-color: #000086;
+
+  --console-bg: #000;
+  --console-border-color:  #6b6372;
+  --console-font-color: #ffff;
+  --console-selected-color: #000;
+
+  --multi-bg: #c0c0c0;
+  --multi-border-color: #6b6372;
+  --multi-font-color: #ffff;
+  --multi-selected-color: #000;
+
+}
+
+
+*{
+
+  box-sizing: border-box;
+
+}
+
+header {
+  font-family: 'Archivo', sans-serif;
+  height: 10vh;
+  width: 100%;
+  opacity: 0.8;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  text-align: center;
+
+}
+
+body{
+  overflow: auto;
+  position: relative;
+  background: #e4e2e2;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.game-container{
+  
+  position: relative;
+  width: 352px;
+  height: 352px;
+  outline: 1px solid black;
+  margin: 0 auto;
+  outline: 1px solid black;
+
+  transform: scale(1.5) translateY(30%); /*change later*/
+
+}
+
+.game-container canvas {
+  image-rendering: pixelated;
+}

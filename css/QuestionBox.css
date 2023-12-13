@@ -1,0 +1,27 @@
+.MultiquestionButtons {
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    left: 20%;
+    right: 0;
+    bottom: 50%;
+    height: 150px;
+    width: 220px;
+    font-size: 12px;
+    padding: 4px;
+    background: var(--console-bg);
+    border-top: 15px solid var(--console-border-color);
+    color: var(--console-font-color);
+    font-family: VT323;
+
+}
+
+#selection-buttons{
+    padding: 10px;
+}
+
+label {
+    margin: 50;
+    font-size: 12px;
+}
