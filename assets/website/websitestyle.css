@@ -140,7 +140,7 @@ li{
     align-items: center;
     height: 80vh;
     margin-top: 50px;
-    background-image: url("\PyVentures\assets\logo\keyboard\keyboard_prop_two.jpg");
+    background-image: url("/assets/logo/keyboard/keyboard_prop_two.jpg");
     background-size: cover;
     overflow: hidden;
         
