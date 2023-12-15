@@ -358,7 +358,7 @@ window.OvrwrldMaps = {
       Book1: new Characters({
         x: utils.withGrid(3),
         y: utils.withGrid(3),
-        src: "/images/characters/Books/Book1.png",
+        src: "\PyVentures\assets\images\Books\Book1.png",
         talking: [
           {
             events: [
@@ -371,7 +371,7 @@ window.OvrwrldMaps = {
         new Characters({
           x: utils.withGrid(12),
           y: utils.withGrid(3),
-          src: "/images/characters/Books/Book2.png",
+          src: "\PyVentures\assets\images\Books\Book2.png",
           talking: [
             {
               events: [
