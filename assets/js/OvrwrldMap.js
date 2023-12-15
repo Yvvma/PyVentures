@@ -114,8 +114,8 @@ class OvrwrldMap {
 window.OvrwrldMaps = {
 
   VillageMap: {
-    lowerSrc: "/images/maps/VillageMapLo.png",
-    upperSrc: "/images/maps/VillageMapUp.png",
+    lowerSrc: "\PyVentures\assets\images\maps\VillageMapLo.png",
+    upperSrc: "\PyVentures\assets\images\maps\VillageMapUp.png",
 
     gameObjects: {
       mainch: new Characters({
@@ -127,7 +127,7 @@ window.OvrwrldMaps = {
       npc3: new Characters({
         x: utils.withGrid(6),
         y: utils.withGrid(9),
-        src: "/images/characters/ch/npc3.png",
+        src: "\PyVentures\assets\images\characters\ch\npc3.png",
         behaveLoop: [
           {type: "stand", direction: "down", time: 600},
           {type: "stand", direction: "up", time: 800},
@@ -274,8 +274,8 @@ window.OvrwrldMaps = {
   },//end village1
 
   LibraryIns: {
-    lowerSrc: "/images/maps/LibraryInsLo.png",
-    upperSrc: "/images/maps/LibraryInsUp.png",
+    lowerSrc: "\PyVentures\assets\images\maps\LibraryInsLo.png",
+    upperSrc: "\PyVentures\assets\images\maps\LibraryInsUp.png",
 
     gameObjects: {
       mainch: new Characters({
@@ -287,7 +287,7 @@ window.OvrwrldMaps = {
       npc1: new Characters({
         x: utils.withGrid(13),
         y: utils.withGrid(6),
-        src: "/images/characters/ch/npc1.png",
+        src: "\PyVentures\assets\images\characters\ch\npc1.png",
         behaveLoop: [
           {type: "stand", direction: "down", time: 600},
           {type: "stand", direction: "up", time: 1600},
@@ -318,7 +318,7 @@ window.OvrwrldMaps = {
       npc2: new Characters({
         x: utils.withGrid(3),
         y: utils.withGrid(6),
-        src: "/images/characters/ch/npc2cut.png",
+        src: "\PyVentures\assets\images\characters\ch\npc2cut.png",
         //fix npc walk loop
         behaveLoop: [
           {type: "stand", direction: "down", time: 200},
